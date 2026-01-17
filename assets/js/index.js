@@ -1,3 +1,8 @@
+/**
+ * Function gets string and checks it for being a palindrome
+ * @param {string} inputString string to check
+ * @returns {boolean}
+ */
 function isPalindrom(inputString) {
   let isPalindromFlag = false; // Булева змінна-перемикач (флаг) для запису і повернення значення
   // Цикл перебору рядка одночасно з двох кінців, щоб дізнатись - він паліндром, чи ні
