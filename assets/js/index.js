@@ -72,3 +72,27 @@ console.log(fileNames); // Вивід переробленого масиву
 // Варіант без мутації масиву (Не за умовою завдання, але вирішив залишити)
 // const newFileNames = fileNames.filter((file) => file.endsWith('.html'));
 // console.log(newFileNames);
+
+// Завдання 3
+
+let str1 = 'abcde abcde abcde abcde';
+
+// Рядок до змін (адже треба ЗАМІНИТИ символи рядка)
+console.log(str1);
+
+// Робираємо рядок на масив слів
+str1 = str1.split(' ');
+
+for (let i = 0; i < str1.length; i++) {
+  // Розбираємо рядок (кожне окреме слово) на масив символів (тимчасова змінна word винесена для підвищення читабельності)
+  let word = [...str1[i]];
+  // Перезаписуємо перший символ на !
+  word[0] = '!';
+  // Збираємо масив назад в рядок
+  str1[i] = word.join('');
+}
+
+str1 = str1.join(' ');
+
+// Рядок після змін
+console.log(str1);
