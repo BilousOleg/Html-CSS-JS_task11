@@ -159,9 +159,9 @@ console.log(isPalindrom(str545, symbolsToIgnore));
 /**
  * Function gets string and finds the longest word in it
  * @param {string} inputString string to find longest word
- * @returns {string | object} string if the longest word is only one, object if more
+ * @returns {string} the longest word in string
  */
-function getLongestWord1(inputString) {
+function getLongestWord(inputString) {
   return inputString
     .split(' ')
     .reduce(
@@ -174,5 +174,5 @@ function getLongestWord1(inputString) {
 const str6 = 'Adipisicing elit';
 const str7 = 'Lorem ipsum dolor sit amet';
 
-console.log(getLongestWord1(str6));
-console.log(getLongestWord1(str7));
+console.log(getLongestWord(str6));
+console.log(getLongestWord(str7));
